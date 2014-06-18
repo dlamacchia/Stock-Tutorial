@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Stocks-Bridging-Header.h"
 
 @interface AppDelegate ()
             

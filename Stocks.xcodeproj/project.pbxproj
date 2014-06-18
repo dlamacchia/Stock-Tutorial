@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		45249C95194686CA008F4993 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45249C94194686CA008F4993 /* main.m */; };
 		45249C98194686CA008F4993 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45249C97194686CA008F4993 /* AppDelegate.m */; };
-		45249C9B194686CA008F4993 /* SymbolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45249C9A194686CA008F4993 /* SymbolViewController.m */; };
 		45249C9E194686CA008F4993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45249C9C194686CA008F4993 /* Main.storyboard */; };
 		45249CA0194686CA008F4993 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45249C9F194686CA008F4993 /* Images.xcassets */; };
 		45249CAC194686CA008F4993 /* StocksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45249CAB194686CA008F4993 /* StocksTests.m */; };
-		45249CB719468BB3008F4993 /* SymbolsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45249CB619468BB3008F4993 /* SymbolsTableViewController.m */; };
-		45CF495919477FFB004A1466 /* StockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CF495819477FFB004A1466 /* StockModel.m */; };
+		D0433B8F1951278D00A8BAA9 /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0433B8E1951278D00A8BAA9 /* StockModel.swift */; };
+		D0C7C2AF1948E643000E9DCE /* SymbolsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C7C2AE1948E643000E9DCE /* SymbolsTableViewController.swift */; };
+		D0FA28E1194CC611003859BA /* SymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FA28E0194CC611003859BA /* SymbolViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,10 @@
 		45249CB619468BB3008F4993 /* SymbolsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymbolsTableViewController.m; sourceTree = "<group>"; };
 		45CF495719477FFB004A1466 /* StockModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockModel.h; sourceTree = "<group>"; };
 		45CF495819477FFB004A1466 /* StockModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockModel.m; sourceTree = "<group>"; };
+		D0433B8E1951278D00A8BAA9 /* StockModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
+		D0C7C2AD1948E643000E9DCE /* Stocks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stocks-Bridging-Header.h"; sourceTree = "<group>"; };
+		D0C7C2AE1948E643000E9DCE /* SymbolsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolsTableViewController.swift; sourceTree = "<group>"; };
+		D0FA28E0194CC611003859BA /* SymbolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SymbolViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,13 +93,17 @@
 				45249C97194686CA008F4993 /* AppDelegate.m */,
 				45249CB519468BB3008F4993 /* SymbolsTableViewController.h */,
 				45249CB619468BB3008F4993 /* SymbolsTableViewController.m */,
+				D0C7C2AE1948E643000E9DCE /* SymbolsTableViewController.swift */,
 				45249C99194686CA008F4993 /* SymbolViewController.h */,
 				45249C9A194686CA008F4993 /* SymbolViewController.m */,
+				D0FA28E0194CC611003859BA /* SymbolViewController.swift */,
+				D0433B8E1951278D00A8BAA9 /* StockModel.swift */,
 				45CF495719477FFB004A1466 /* StockModel.h */,
 				45CF495819477FFB004A1466 /* StockModel.m */,
 				45249C9C194686CA008F4993 /* Main.storyboard */,
 				45249C9F194686CA008F4993 /* Images.xcassets */,
 				45249C92194686CA008F4993 /* Supporting Files */,
+				D0C7C2AD1948E643000E9DCE /* Stocks-Bridging-Header.h */,
 			);
 			path = Stocks;
 			sourceTree = "<group>";
@@ -225,9 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45249CB719468BB3008F4993 /* SymbolsTableViewController.m in Sources */,
-				45249C9B194686CA008F4993 /* SymbolViewController.m in Sources */,
-				45CF495919477FFB004A1466 /* StockModel.m in Sources */,
+				D0C7C2AF1948E643000E9DCE /* SymbolsTableViewController.swift in Sources */,
+				D0FA28E1194CC611003859BA /* SymbolViewController.swift in Sources */,
+				D0433B8F1951278D00A8BAA9 /* StockModel.swift in Sources */,
 				45249C98194686CA008F4993 /* AppDelegate.m in Sources */,
 				45249C95194686CA008F4993 /* main.m in Sources */,
 			);
@@ -346,11 +354,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				INFOPLIST_FILE = Stocks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Stocks/Stocks-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -359,11 +370,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_STATIC_ANALYZER_MODE = deep;
 				INFOPLIST_FILE = Stocks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Stocks/Stocks-Bridging-Header.h";
 			};
 			name = Release;
 		};

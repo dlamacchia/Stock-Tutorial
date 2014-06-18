@@ -11,13 +11,13 @@
 #import "StockModel.h"
 
 @interface SymbolViewController ()
-@property (readwrite, nonatomic, copy) NSDictionary *stockInfo;           
+@property (readwrite, nonatomic, copy) NSDictionary *stockInfo;
 @property (readwrite, nonatomic, weak) IBOutlet UILabel *priceLabel;
 @property (readwrite, nonatomic, weak) IBOutlet UILabel *openClosePriceLabel;
 @end
 
 @implementation SymbolViewController
-            
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
